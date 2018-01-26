@@ -11,5 +11,5 @@ RUN apk add --update ca-certificates openssl tar &&\
 
 VOLUME /data
 EXPOSE 2379 2380
-ADD run.sh /bin/run.sh
-ENTRYPOINT ["/bin/run.sh"]
+
+ENTRYPOINT ["etcd"]
